@@ -1,0 +1,40 @@
+@charset "UTF-8";
+.sn_banner {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-top: 90rem/@baseFontSize;
+  ul:first-of-type {
+    font-size: 0;
+    width: 100%*@imageSize;
+    transform: translateX(-100%/@imageSize);
+    li {
+      width: 100% / @imageSize;
+      float: left;
+      a {
+        display: block;
+        width: 100%;
+        img {
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+  }
+  ul:last-of-type {
+    position: absolute;
+    right: 30rem/@baseFontSize;
+    bottom: 8rem/@baseFontSize;
+    li{
+      width: 12rem/@baseFontSize;
+      height: 12rem/@baseFontSize;
+      margin-left: 10rem/@baseFontSize;
+      border-radius: 50%;
+      background: #ffffff;
+      float: left;
+      &.now{
+        background: @snColor;
+      }
+    }
+  }
+}

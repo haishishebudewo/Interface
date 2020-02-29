@@ -1,0 +1,9 @@
+@charset "UTF-8";
+.adapterMixin(@index) when (@index > 0) {
+  @media (min-width: extract(@adapterScreenList, @index)) {
+    html {
+      font-size: @baseFontSize/@psdWidth*extract(@adapterScreenList,@index);
+    }
+  }
+  .adapterMixin(@index - 1);
+}

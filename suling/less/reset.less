@@ -1,0 +1,78 @@
+/*reset css*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*由于移动使用流式布局，无法计算值，因此使用盒模型*/
+  -webkit-box-sizing: border-box;
+  tap-highlight-color: transparent; /*去除点击高亮显示*/
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Microsoft YaHei", sans-serif; /*移动端如果没有微软雅黑，那么使用所有移动端自带字体sans-serif*/
+  color: #333333;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+input, textarea, select {
+  resize: none; /*不可更改文本域的大小*/
+  border: none; /*去除自带边框*/
+  outline: none; /*去除默认凹陷效果*/
+  appearance: none; /*去除元素自带样式*/
+  -webkit-appearance: none;
+}
+
+/*common css样式*/
+.f_left {
+  float: left;
+}
+
+.f_right {
+  float: right;
+}
+
+.clearFix::before,
+.clearFix::after {
+  content: "";
+  clear: both;
+  display: block;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+}
+
+.m_l10 {
+  margin-left: 10px;
+}
+
+.m_r10 {
+  margin-right: 10px;
+}
+
+.m_t10 {
+  margin-top: 10px;
+}
+
+.m_b10 {
+  margin-bottom: 10px;
+}
+
+.sn_container {
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
