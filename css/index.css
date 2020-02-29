@@ -1,0 +1,284 @@
+/*京东首页*/
+.main {
+    height: 480px;
+    position: relative;
+}
+
+.jd {
+    position: relative;
+}
+
+.jd_inner {
+    height: 480px;
+	position: relative;
+	z-index: 1;
+}
+
+.ad {
+    width: 100%;
+    height: 480px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.ad a {
+    display: block;
+    background: url(../images/bg.png) no-repeat center top;
+    height: 100%;
+    width: 100%;
+
+}
+
+.jd_col1 {
+    width: 190px;
+    height: 460px;
+    background: #6E6568;
+    float: left;
+    padding-top: 20px;
+    font-size: 12px;
+}
+
+.jd_col1 li {
+    padding-left: 10px;
+    line-height: 28px;
+}
+
+.jd_col1 li:hover {
+	background: #D9D9D9;
+}
+
+.jd_col1 li a {
+    color: #F6F5F6;
+}
+.jd_col1 li a:hover{
+	color: #F10215;
+}
+
+.jd_col1 li span{
+	font-size: 12px;
+	cursor: text;
+	color: #F6FFE7;
+}
+
+
+.jd_col2 {
+    width: 790px;
+    height: 100%;
+    float: left;
+    margin-left: 10px;
+}
+
+.jd_col3 {
+    width: 190px;
+    height: 100%;
+    float: right;
+}
+.jd_col2_hd{
+	height: 340px;
+	position: relative;
+}
+.jd_col2_hd ol{
+	width: 180px;
+	height: 20px;
+	background: rgba(255 ,255 ,255 ,.3);
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	margin-left: -90px; 
+	padding: 0;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.jd_col2_hd ol li{
+	width: 12px;
+	height: 12px;
+	border-radius: 6px;
+	background: #fff;
+	float: left;
+	margin: 4px 5px;
+}
+.jd_col2_hd .current{
+	background: #F10215;
+}
+.jd_col2_bd{
+	height: 130px;
+	margin-top: 10px;
+}
+.jd_col2_bd div{
+	float: left;
+	width: 390px;
+}
+.jd_col2_bd img{
+	width: 100%;
+}
+.first_pic{
+	margin-right: 10px;
+}
+.arrow a{
+	display: block;
+	width: 30px;
+	height: 60px;
+	background: rgba(0 ,0 ,0 ,.3);
+	font-family: "icomoon";
+	font-style: normal;
+	font-size: 12px;
+	text-align: center;
+	line-height: 60px;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -30px;
+	font-size:30px;
+	color: #fff;
+}
+.arrow .arrow2{
+	left: calc(100% - 30px);
+}
+/*登录注册*/
+.user{
+	height: 95px;
+	padding: 20px 27px 0 15px;
+
+}
+.user_info{
+	padding-left: 54px;
+	height: 40px;
+	width: 147px;
+	position: relative;
+}
+.user_info a{
+	font-size: 12px;
+	color: #747474;
+	line-height: 22px;
+}
+.user_info a:hover{
+	color: #F10215;
+}
+.user_info .user_img{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.user_img img{
+	width: 100%;
+	height: auto;
+}
+/*福利会员*/
+.user_profit{
+	margin-top: 15px;
+}
+.user_profit a{
+	display: inline-block;
+	width: 60px;
+	height: 20px;
+	color: #F10215;
+	border: 2px solid #F10215;
+	font-size: 12px;
+	line-height: 20px;
+	margin-right: 7px; 
+	text-align: center;
+}
+.user_profit a:hover{
+	background: #F10215;
+	color: #fff;
+}
+.news{
+	height: 144px;
+	border-top: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	padding: 10px 15px 0;
+	font-size: 12px;
+	color: #747474;
+}
+.news_hd{
+	border-bottom: 1px solid #747474;
+	padding-bottom: 4px; 
+	position: relative;
+}
+.cuxiao{
+	display: inline-block;
+	border-right: 1px solid #747474;
+	padding-right: 10px;
+	margin-right: 6px;
+}
+.news_hd a{
+	color: #747474;
+}
+.news_hd .more{
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.line{
+	width: 28px;
+	height: 2px;
+	background: #F10215;
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+}
+.jd_servcie{
+	height: 209px;
+	overflow: hidden;
+}
+.jd_servcie ul{
+	width: 196px;
+}
+.jd_servcie li{
+	width: 47px;
+	height: 69px;
+	border-right: 1px solid #747474;
+	border-bottom: 1px solid #747474;
+	float: left;
+}
+.jd_servcie a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	color: #747474;
+	font-size: 12px;
+}
+.jd_servcie i{
+	margin:17px 15px 0;
+	display: block;
+	width: 18px;
+	height: 30px;
+	background: url(../images/sprite_fs@1x.png) no-repeat -5px -89px;
+}
+.news_bd{
+	padding-top:15px; 
+}
+.news_bd li{
+	line-height: 23px;
+}
+.elevator{
+	width: 30px;
+	height: 596px;
+	background: rgba(0 ,0 ,0 ,.3);
+	position: fixed;
+	left: 100px;
+	top: 250px;
+}
+.elevator li{
+	text-align: center;
+	height: 40px;
+	font-size: 12px;
+	width: 30px;
+	padding-top: 10px;
+}
+.elevator a{
+	padding-top: 12px; 
+	display: block;
+	height: 100%;
+	color: #FFFFFF;
+}
+.elevator a:hover{
+	background: #F10215;
+}
